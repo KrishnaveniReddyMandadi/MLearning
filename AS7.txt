@@ -1,0 +1,7 @@
+Step 1:  Create a dataset for clustering using "sklearn.datasets.make_blobs". Here you can specify the number of features as 2 and number of samples as 1000.
+
+https://scikit-learn.org/stable/modules/generated/sklearn.datasets.make_blobs.html#sklearn.datasets.make_blobs (Links to an external site.)
+
+Step 2: Run K-Means and GMMs to cluster the data. "sklearn.cluster.KMeans" and "sklearn.mixture.GaussianMixture". You can use the "fit_predict" method to fit and predict the cluster labels. The number of cluster centers can be varied using the "n_clusters" parameter in KMeans and the "n_components" parameter in GMMs.
+
+Step 3: Repeat step 1 and step 2 for different number of "real clusters" in the data and varying number of clusters initialized in KMeans and GMMs. Specifically, increase the "centers" parameter in "make_blobs" to  change the number of "real clusters" in the data, vary this as 3 5 and 8 . For KMeans and GMMs, try to change the clusters to 3, 5 and 8. In each case, measure the quality of the predicted clusters using "sklearn.metrics.silhouette_score".  You need to give this only the input data and the predicted labels to get the score. As the number of clusters in the data increases, which of the 2 clustering algorithms had better performance?

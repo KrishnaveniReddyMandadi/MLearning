@@ -1,0 +1,4 @@
+Use the dataset "sklearn.datasets.load_iris".  
+The bagging classifier is defined in "sklearn.ensemble.BaggingClassifier" and the boosting classifier is defined in "sklearn.ensemble.AdaBoostClassifier" (use the SAMME discrete boosting algorithm since this is what we discussed in the slides)
+For both bagging and boosting use DecisionTreeClassifier as the base classifier with max_depth equal to 1.
+Compare the accuracy on the full dataset (training accuracy) as well as 5-fold cross validation accuracy (generalization accuracy) for the 2 classifiers as we vary the number of estimators (n_estimators parameter which controls how many classifiers are added in the ensemble) between 1 and 10. Did the bias reduce (training accuracy becomes larger) when we increased the number of estimators in both bagging and boosting? What was the effect of adding estimators on 5-fold cross validation accuracy?

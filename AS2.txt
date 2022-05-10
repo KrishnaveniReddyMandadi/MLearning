@@ -1,0 +1,11 @@
+Step 1: Load the digits dataset as in the previous assignment
+
+Step 2: Split the data into training and testing sets. Use "from sklearn.model_selection import train_test_split" for doing this (you can choose 80% as training and 20% as test data)
+
+Step 3: Fit a KNN classifier on the training data. Use "from sklearn.neighbors import KNeighborsClassifier". Select at least 3 different images corresponding to 3 different digits from the test data (i.e., say test_img_digit_0, test_img_digit_6, test_img_8). For each of these determine the images in the training set that are in its K-neighborhood. You can use the "KNeighborsClassifier.kneighbors" function to do this. Display the test images and their neighborhoods (Each image is 8 X 8).  You can plot an image using imshow() in matplotlib.pyplot.
+
+Step 4: Analyze the results in step 3 for different values of K (e.g. 1, 3, 5). Did increasing the neighborhood result in better or worse neighbors for you test images.
+
+Step 5: There is a "weights" parameter in KNeighborsClassifier. Modify this from uniform to distance (i.e. it uses a distance-weighted neighborhood). Did the neighborhoods for the test images in step 3 and 4 improve with this?
+
+ 

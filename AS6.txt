@@ -1,0 +1,9 @@
+Step 1: Create a synthetic dataset with just 2 informative features and 1000 samples. e.g. X1,Y1 = make_classification(n_samples=1000,n_features=2, n_redundant=0,  n_informative=2, n_clusters_per_class=2). Visualize this dataset with a scatter plot where the color (c) of the data point is equal to the class. E.g. plt.scatter(X1[:, 0], X1[:, 1], marker="o", c=Y1)
+
+Step 2: Fit a Linear SVM using svm.SVC() to the synthetic dataset and also predict the same dataset that you used in training. Visualize the predictions using the same scatter plot as above but with color c is set to the predicted values. (Note: You can also visualize the decision boundary but it requires a bit more visualization if you are interested). 
+
+Step 3: Repeat the above steps as you change the balance of the classes, i.e. instead of the default 50% data in each class modify it to i)75% of 1 class and 25% of the other, i) 90% of 1 class and 10% of the other iii) 99% of 1 class and 1% of the other (you can think of this as an application where you are classifying between healthy patients and those with a rare condition, naturally there will be a lot more healthy patients). You can change the class balance using the parameter "weights" in make_classification. e.g. weights=[0.25,0.75]is a 25-75 split. How does the SVM classification change as the class balance changes?
+
+Step 4: Try to change the "class_weight" parameter in SVC() to "balanced", i.e., the SVM automatically changes weights proportional to the frequencies of classes. Did this improve the SVM, particularly when the imbalance is extreme (99%, 1%).
+
+ 

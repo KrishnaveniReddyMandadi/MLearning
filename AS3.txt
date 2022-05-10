@@ -1,0 +1,5 @@
+Step 1: Load the medical dataset from sklearn using "datasets.load_breast_cancer()". It is a binary classification dataset.
+
+Step 2: Split the data into 20% test and the rest for training using "train_test_split()". Fit the logistic regression model on this dataset. use "from sklearn.linear_model import LogisticRegression". Predict the probabilities on the test dataset and draw the calibration curve "sklearn.calibration.CalibrationDisplay".
+
+Step 3: Perform Step 2 with feature selection using two approaches. L1-regularization and elasticnet (use the "penalty" parameter for logistic regression). Did your classifier become better calibrated with feature selection? 

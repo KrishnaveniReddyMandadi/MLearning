@@ -1,0 +1,7 @@
+Step 1: Load the data: Use the following package from sklearn.datasets import load_digits. Each instance is 8x8 image (64 pixels/features) and there are 1700+ instances.
+
+Step 2: Perform 5-fold cross validation. Use from sklearn.tree import DecisionTreeClassifier, from sklearn.model_selection import cross_val_score to perform cross validation. Vary the max_depth parameter in DecisionTreeClassifier from 1 to 10. How does the average cross validation error change for each of these depths? You can draw a table (or plot a graph using import matplotlib.pyplot as plt). 
+
+Step 3: Analyze the feature importances (for the best max_depth setting) (you an refer to the video and demo code). Which were the 10 most important pixels for the classifier. Were the important pixels meaningful to you? 
+
+Step 5: Suggest some steps you could take that could improve the performance of the classifier.
